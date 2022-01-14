@@ -1,0 +1,35 @@
+﻿@inherits LayoutComponentBase
+
+<MatAppBarContainer>
+    <MatAppBar Fixed="true">
+        <MatAppBarRow>
+            <MatAppBarSection>
+                 <a style="color:white;font-size:230%;" href="">  <MatIconButton Icon="home"> </MatIconButton>  </a>
+                <span class="uk-icon uk-icon-image" 
+                style="width:58px;height:46px;background-image: url(https://st2.depositphotos.com/5943796/8708/v/950/depositphotos_87080520-stock-illustration-c-initial-circle-company-or.jpg);"></span>
+<MatAppBarTitle>   FirstProApp </MatAppBarTitle> 
+            </MatAppBarSection>
+            <MatAppBarSection Align="@MatAppBarSectionAlign.End">
+                <a style="color:white;font-size:230%;" href="Users"> <MatIconButton Icon="account_circle"></MatIconButton></a> 
+                <a style="color:white;font-size:230%;" href="Offers"> <MatIconButton Icon="card_giftcard"></MatIconButton></a> 
+                <a style="color:white;font-size:230%;" href="Catlogs"> <MatIconButton Icon="view_day"></MatIconButton></a> 
+                <a style="color:white;font-size:230%;" href="Search"> <MatIconButton Icon="search"></MatIconButton></a>
+                 
+            </MatAppBarSection>
+        </MatAppBarRow>
+    </MatAppBar>
+ 
+    <MatAppBarContent>
+         <main>
+       
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+
+    </MatAppBarContent>
+
+</MatAppBarContainer>
+
+ 
+   
